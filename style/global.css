@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --main-color: #A05FBF;
+    --main-font: "PT Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 10px;
+    transition: all .24s ease-in-out;
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+}

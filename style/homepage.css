@@ -1,0 +1,145 @@
+@import url(./global.css);
+
+body{
+    background-color: #fdfdfd;
+}
+
+#cabecalho {
+    background-color: var(--main-color);
+    padding: 0 15px;
+    text-align: right;
+}
+
+#menu {
+    list-style: none;
+    display: inline-block;
+}
+
+.item{
+    display: block;
+    padding: 15px 0px;
+    width: 84px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    color: #fdfdfd;
+    background: none;
+    border: none;
+}
+
+.item:hover{
+    background-color: gray;
+}
+
+#drop{
+    position: absolute;
+    display: none;
+}
+
+#drop.active{
+    position: absolute;
+    display: block;
+}
+
+.subitem{
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+/* ========== GUIAS GERAL ========== */
+
+#container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.column {
+    margin: 15px 0px;
+    height: calc(100vh - 100px);
+}
+
+.column p.title {
+    font-weight: bold;
+    font-size: 24pt;
+    margin: 20px 30px;
+}
+
+/* ========== MENU GUIAS ========== */
+
+#menu-guia{
+    display: inline-block;
+    width: 10%;
+    padding: 5px;
+}
+
+#botao-perfil, #botao-chat{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16pt;
+    background: none;
+    color: var(--main-color);
+    text-align: left;
+    cursor: pointer;
+}
+/* ========== CONVERSAS ========== */
+
+#inbox {
+    margin-right: 10px;
+    display: none;
+    vertical-align: top;
+    overflow-y: auto;
+    border-radius: 3px;
+    width: 25%;
+    background-color: #fdfdfd;
+    border: 3px solid #E1E2FF;
+}
+
+/* ========== CHAT ========== */
+
+#chat {
+    display: none;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 68%;
+    background-color: #fdfdfd;
+    border: 3px solid #E1E2FF;
+    border-radius: 3px;
+    height: calc(100vh - 100px);
+    overflow-x: auto;
+}
+
+#profile{
+    display: none;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 88%;
+    background-color: #fdfdfd;
+    border: 3px solid #E1E2FF;
+    border-radius: 3px;
+    height: calc(100vh - 100px);
+    overflow-x: auto;
+}
+
+#chat.active {
+    display: inline-block;
+}
+
+#profile.active{
+    display: inline-block;
+
+}
+
+#profile.active #botao-perfil {
+    background-color: #E1E2FF;
+}
+
+#inbox div.empty p{
+    padding: auto 10%;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 14pt;
+}
